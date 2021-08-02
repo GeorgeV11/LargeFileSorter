@@ -8,7 +8,7 @@ namespace GenerateSortTest
     [TestClass]
     public class SorterGeneratorTest
     {
-        string _FileName;
+        string _FileName=null;
         string _OutputFileName = null;
 
 
@@ -51,8 +51,11 @@ namespace GenerateSortTest
         public void CleanUp()
         {
             File.Delete(_FileName);
-            if (_OutputFileName!=null)
+            if (_OutputFileName != null)
+            {
                 File.Delete(_OutputFileName);
+                _OutputFileName = null;
+            }
         }        
     }
 }
