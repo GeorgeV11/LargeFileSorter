@@ -19,6 +19,7 @@ namespace LargeFileGenerator
         const string _DefailtFileName = "generated.csv";
         const long _DefaultSize = 1000000000;
         const string _SizeKey = "/s:";
+        const string _Info = "/?";
 
         static void PrintUsage()
         {
@@ -29,8 +30,13 @@ namespace LargeFileGenerator
             long size = _DefaultSize;
             var outputFileName = _DefailtFileName;
             if (args.Length>0)
-            {
+            {                
                 List<string> arguments = args.ToList();
+                if (arguments.Contains(_Info))
+                {
+                    PrintUsage();
+                    return;
+                }
                 var sizeKeyArg= arguments.Where(x => x.StartsWith(_SizeKey)).FirstOrDefault();
                 if (sizeKeyArg != null)
                 {

@@ -21,7 +21,7 @@ namespace SortStrings
             Console.WriteLine(tms);
         }
         const string _MemKey = "/mem:";
-
+        const string _Info = "/?";
 
         static void PrintUsage()
         {
@@ -30,17 +30,17 @@ namespace SortStrings
 
         static void Main(string[] args)
         {
-            var path = @"..\\..\\..\\..\\" +
-    "97.csv";
-            //"outputFile1G.csv";
-            var pathOut = @"..\\..\\..\\..\\" +
-    "outputFile1GSorted.csv"
-                ;
+            string path;            
+            string pathOut ;
             long memorySize =  50 * 1024;
-
             if (args.Length > 0)
             {
                 List<string> arguments = args.ToList();
+                if (arguments.Contains(_Info))
+                {
+                    PrintUsage();
+                    return;
+                }
                 var sizeKeyArg = arguments.Where(x => x.StartsWith(_MemKey)).FirstOrDefault();
                 if (sizeKeyArg != null)
                 {

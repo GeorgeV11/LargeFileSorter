@@ -33,14 +33,15 @@ namespace SortStrings
             {
                 int ind = 0;
                 Int64 currentSz = 0;
+                Console.WriteLine(string.Format("Generated:"));
                 while (currentSz < desizedSize)
                 {
                     var gn = GenerateItem().ToStringAlt();
                     currentSz += gn.Length + 2;
                     fileWr.WriteLine(gn);
-                    if (ind % 10000000 == 0)
-                        Console.WriteLine(string.Format("index={0}, sz={1}",ind,currentSz));
                     ind++;
+                    if (ind % 10000000 == 0)
+                        Console.WriteLine(string.Format("Count={0}, FileSize={1}",ind,currentSz));                    
                 }
             }
         }

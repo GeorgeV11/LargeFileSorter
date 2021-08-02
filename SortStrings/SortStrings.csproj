@@ -65,18 +65,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseContanerHandler.cs" />
-    <Compile Include="BucketSort.cs" />
-    <Compile Include="ContainerHandler.cs" />
-    <Compile Include="ContainerHandlerFactory.cs" />
-    <Compile Include="EContainerMode.cs" />
-    <Compile Include="IContanerHandler.cs" />
-    <Compile Include="LargeFileSorter.cs" />
-    <Compile Include="NumberOfDigitSplitContainerHandler.cs" />
-    <Compile Include="PartFile.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="NumberRangeSplitContainerHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

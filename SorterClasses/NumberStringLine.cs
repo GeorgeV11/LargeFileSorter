@@ -37,6 +37,26 @@ namespace SortStrings
             return res;
         }
 
+        public static  bool operator<(NumberStringLine first , NumberStringLine second )
+        {
+            if (first==null)
+            {
+                return false;
+            }
+            else 
+              return (first.CompareTo(second) == -1);
+        }
+        public static bool operator >(NumberStringLine first, NumberStringLine second)         
+        {
+            if (first == null)
+            {
+                return false;
+            }
+            else
+                return (first.CompareTo(second) == 1);
+
+        }
+
         public override string ToString()
         {
             return string.Format("{0}.{1}", NumberPart, StringPart);

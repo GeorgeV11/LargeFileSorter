@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargeFileGenerator", "Large
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SorterClasses", "SorterClasses\SorterClasses.csproj", "{DDE3956D-52B2-4215-A9A9-AA93A0B5F132}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateSortTest", "GenerateSortTest\GenerateSortTest.csproj", "{0650B54A-9D41-49DF-9E5D-D1C32C60DF36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,14 @@ Global
 		{DDE3956D-52B2-4215-A9A9-AA93A0B5F132}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DDE3956D-52B2-4215-A9A9-AA93A0B5F132}.Release|x64.ActiveCfg = Release|Any CPU
 		{DDE3956D-52B2-4215-A9A9-AA93A0B5F132}.Release|x64.Build.0 = Release|Any CPU
+		{0650B54A-9D41-49DF-9E5D-D1C32C60DF36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0650B54A-9D41-49DF-9E5D-D1C32C60DF36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0650B54A-9D41-49DF-9E5D-D1C32C60DF36}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0650B54A-9D41-49DF-9E5D-D1C32C60DF36}.Debug|x64.Build.0 = Debug|Any CPU
+		{0650B54A-9D41-49DF-9E5D-D1C32C60DF36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0650B54A-9D41-49DF-9E5D-D1C32C60DF36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0650B54A-9D41-49DF-9E5D-D1C32C60DF36}.Release|x64.ActiveCfg = Release|Any CPU
+		{0650B54A-9D41-49DF-9E5D-D1C32C60DF36}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

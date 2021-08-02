@@ -41,10 +41,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BucketSort.cs" />
+    <Compile Include="ContainerHandlers\BaseContanerHandler.cs" />
+    <Compile Include="ContainerHandlers\ContainerHandler.cs" />
+    <Compile Include="ContainerHandlers\ContainerHandlerFactory.cs" />
+    <Compile Include="ContainerHandlers\EContainerMode.cs" />
+    <Compile Include="ContainerHandlers\IContanerHandler.cs" />
+    <Compile Include="ContainerHandlers\NumberOfDigitSplitContainerHandler.cs" />
+    <Compile Include="ContainerHandlers\NumberRangeSplitContainerHandler.cs" />
     <Compile Include="Helers.cs" />
+    <Compile Include="LargeFileSorter.cs" />
     <Compile Include="NumberStringLine.cs" />
+    <Compile Include="PartFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TickCounter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\english-word-list-total.csv">
+      <Link>english-word-list-total.csv</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

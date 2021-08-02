@@ -13,7 +13,6 @@ namespace SortStrings
         
         public PartFile()
         {
-
         }
        
         public PartFile(string directory,string prefix, string posfix, EContainerMode containerMode, int nextCharPosition, int numberOfDigits=0)
