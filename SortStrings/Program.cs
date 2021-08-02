@@ -32,7 +32,7 @@ namespace SortStrings
         {
             string path;            
             string pathOut ;
-            long memorySize =  50 * 1024;
+            long memorySize =   1024*1024*1024; 
             if (args.Length > 0)
             {
                 List<string> arguments = args.ToList();
