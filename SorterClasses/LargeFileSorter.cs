@@ -42,14 +42,23 @@ namespace SortStrings
                     }
                 }
             }
-        }        
+        }
         protected static void SortSmallPart(string inputFilePath, string outputFile)
         {
+            {
             var h = new Helpers();
             var data = h.LoadData(inputFilePath);
             data.Sort();
-            var lst =data.Select(x => x.ToString()).ToList();
-            File.WriteAllLines(outputFile, lst);
+            using (var strWr = new StreamWriter(outputFile))
+            {
+                for (int i = 0; i < data.Count; i++)
+                    strWr.WriteLine(data[i].ToString());
+                ///var lst = data.Select(x => x.ToString()).ToList();
+                //File.WriteAllLines(outputFile, lst);
+                strWr.Close();
+            }
+          }
+            GC.Collect();
         }
 
 
